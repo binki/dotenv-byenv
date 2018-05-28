@@ -20,7 +20,7 @@ require('dotenv-byenv').config();
 
 `.env` files are found and loaded depending on your current environment.
 Recommended environments are `development`, `production`, and `test`.
-If no environment is specified by the system, `NODE_ENV` will be set to `development.
+If no environment is specified by the system, `NODE_ENV` will be set to `development`.
 Due to the nature of the load order, specifying `NODE_ENV` in `.env.local` does not make sense and the value will be ignored (because it is set prior to checking `.env` files).
 To specify the environment, set `NODE_ENV` in the system environment (e.g., on POSIX: `NODE_ENV=production node index.js`).
 
