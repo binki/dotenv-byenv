@@ -1,0 +1,26 @@
+{
+  "name": "dotenv-byenv",
+  "version": "1.0.0",
+  "description": "The purpose of this package is to load `.env` files in a similar way to how [`react-scripts` does](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-development-environment-variables-in-env) for server-side apps. This is quite different from the popular [`dotenv`](https://www.npmjs.com/package/dotenv) works.",
+  "dependencies": {
+    "dotenv": "^5.0.1"
+  },
+  "devDependencies": {
+    "ts-node": "^6.0.5",
+    "typescript": "^2.8.3"
+  },
+  "scripts": {
+    "test": "./test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binki/dotenv-byenv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/binki/dotenv-byenv/issues"
+  },
+  "homepage": "https://github.com/binki/dotenv-byenv#readme"
+}
