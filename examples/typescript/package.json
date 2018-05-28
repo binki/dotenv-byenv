@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "dotenv-byenv": "^1.0.0"
+    "dotenv-byenv": "^1.0.1"
   },
   "devDependencies": {
     "@types/node": "^10.1.2"
