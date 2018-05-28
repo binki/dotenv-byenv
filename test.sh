@@ -8,7 +8,7 @@ ORIGINAL_PACKAGE_PATH=${PWD}
 DOTENV_BYENV_TMPDIR=$(mktemp -d 2>/dev/null || mktemp -d -t tmp)
 
 cp -r "${ORIGINAL_PACKAGE_PATH}"/examples/typescript "${DOTENV_BYENV_TMPDIR}"/
-pushd "${DOTENV_BYENV_TMPDIR}"/typescript
+cd "${DOTENV_BYENV_TMPDIR}"/typescript
 # Install the package being testesd
 npm install "${ORIGINAL_PACKAGE_PATH}"
 # Install other packages
@@ -19,6 +19,6 @@ NODE_ENV=production ts-node index.ts production-.env.production
 
 echo X=production-.env.production.local > .env.production.local
 NODE_ENV=production ts-node index.ts production-.env.production.local
-popd
+cd "${ORIGINAL_PACKAGE_PATH}"
 
 rm -rf "${DOTENV_BYENV_TMPDIR}"
